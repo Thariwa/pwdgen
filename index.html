@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="./dist/output.css">
 </head>
-<body>
-    <main>
-        <div>
+<body class="bg-blue-400">
+    <main class="w-screen h-screen flex justify-center items-center" >
+        <div class="bg-slate-950 text-white shadow-lg shadow-slate-900 px-4 pb-20 pt-10 rounded-lg">
+            <h1 class="uppercase text-2xl font-serif mb-7 text-sky-700">Password Generator</h1>
             <ul>
                 <li>
                     <input type="radio" name="pwd" id="include">
-                    <label for="include">include special charaters</label>
+                    <label for="include" class="font-[poppins] text-lg">Include special charaters</label>
                 </li>
                 <li>
                     <input type="radio" name="pwd" id="exclude">
-                    <label for="exclude">exclude special charaters</label>
+                    <label for="exclude" class="font-[poppins] text-lg">Exclude special charaters</label>
                 </li>
                 <li>
-                    <p id="password"></p>
+                    <p id="password" class="rounded-lg bg-white mt-5">Password</p>
                 </li>
                 <li>
-                    <input type="button" value="generate password">
+                    <input type="button" value="generate password" class="mt-8 rounded-md bg-gray-800 px-4 py-2 ">
                 </li>
             </ul>
         </div>
@@ -30,5 +32,6 @@
 
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
